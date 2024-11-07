@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te quiero Aitor</title>
+</head>
+<script>
+
+    for (var i = 0; i < 145; i++) {
+        document.write('<span class="rotated">Te quiero infinito </span>');
+    
+    }
+  alert('¿Sabes?');
+alert('¿que?');
+    alert('¿te?');
+    alert('¿quiero?');
+ 
+ </script>
+<body>
+   
+  
+    <div class="flor">
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="rectangulo"></div>
+        <div class="circulo"></div></div>
+        <div class="palo"></div>
+
+
+</body>
+</html>
+
+ <style>
+    body{
+margin-top: 20%;
+margin-left: 10%;
+        color: orange;
+        transform: rotate(-10deg);
+        background-color: orange;
+      
+      
+    }
+    .rotated{
+        transform: rotate(-10deg);
+    }
+    
+    .flor{
+      
+        align-self: center;
+        justify-self: center;
+        margin-top: -220%;
+        display: grid;
+        grid-template-columns: 2;
+        grid-row: 3;
+    }
+    
+    .rectangulo {
+        background: linear-gradient(to top left, #FFDD57, #FFA500); 
+        border: 2px solid #ffd874;
+        width: 150px;           
+        height: 50px;          
+        border-radius: 60% 60% 20% 20%;
+        z-index: 1;
+        animation: movePetal 4s ease forwards; 
+      }
+    
+      .circulo{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin-left: 25%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
+        gap: 10px;
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        border-radius: 50%;
+        display: flex;
+        overflow: hidden;
+        justify-items: center;
+        z-index: -1;
+      }
+      .text{
+        color: orange;
+        font-size: xx-small;
+        position: absolute;
+        transform: rotate(-30deg);
+       white-space: nowrap;
+       transform-origin: 0 100px;
+    
+      }
+      .rectangulo:nth-child(1) {  transform: rotate(50deg) translate(-23%, -15%); }
+      .rectangulo:nth-child(2) {  transform: rotate(-30deg) translate(38%, 80%); }
+      .rectangulo:nth-child(3) {  transform: rotate(-8deg) translate(-12%, -150%); }
+      .rectangulo:nth-child(4) { transform: rotate(25deg) translate(22%, -90%); }
+      .rectangulo:nth-child(5) { transform: rotate(125deg) translate(-38%, 0%); }
+      .rectangulo:nth-child(6) { transform: rotate(70deg) translate(-15%, -5%); }
+      .rectangulo:nth-child(7) {  transform: rotate(100deg) translate(-55%, -160%); }
+      .rectangulo:nth-child(8) { transform: rotate(80deg) translate(-270%, 80%); }
+      .rectangulo:nth-child(9) { transform: rotate(0deg) translate(-35%, -560%); }
+      .rectangulo:nth-child(10) { transform: rotate(-170deg) translate(-35%, 500%); }
+      .rectangulo:nth-child(11) { transform: rotate(-20deg) translate(260%, -510%); }
+      .rectangulo:nth-child(12) { transform: rotate(20deg) translate(-230%, -600%); }
+      .rectangulo:nth-child(13) { transform: rotate(110deg) translate(-380%, 55%); }
+    .palo{
+        background-color: green;
+        height: 300px;
+        width: 20px;
+        transform: rotate(10deg) translate(380%, -90%);
+        animation: movePalo 4s ease forwards;
+    }
+    
+    @keyframes movePetal {
+        0% {
+       
+            transform: rotate(180deg) translate(500px, 500px); 
+        }
+        100% {
+    
+        }
+    }
+    
+    
+    @keyframes movePalo {
+        0% {
+      
+            transform: rotate(0deg) translate(-500px, 500px);
+        }
+        100% {
+            
+            transform: rotate(10deg) translate(380%, -90%);
+        }
+    }</style>
+
+  
